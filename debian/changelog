@@ -1,0 +1,5 @@
+python-django-formtools (1.0-1) unstable; urgency=medium
+
+  * Initial release. (Closes: #798669)
+
+ -- Thomas Goirand <zigo@debian.org>  Fri, 11 Sep 2015 17:47:46 +0200

@@ -1,0 +1,65 @@
+Source: python-django-formtools
+Section: python
+Priority: optional
+Maintainer: PKG OpenStack <openstack-devel@lists.alioth.debian.org>
+Uploaders: Thomas Goirand <zigo@debian.org>,
+Build-Depends: debhelper (>= 9),
+               dh-python,
+               python-all,
+               python-setuptools,
+               python-sphinx,
+               python3-all,
+               python3-setuptools,
+Build-Depends-Indep: python-django (>= 1.7),
+                     python3-django (>= 1.7),
+Standards-Version: 3.9.6
+Vcs-Browser: http://anonscm.debian.org/gitweb/?p=openstack/python-django-formtools.git
+Vcs-Git: git://anonscm.debian.org/openstack/python-django-formtools.git
+Homepage: http://django-formtools.readthedocs.org/en/latest/
+
+Package: python-django-formtools
+Architecture: all
+Depends: python-django (>= 1.7),
+         ${misc:Depends},
+         ${python:Depends},
+Suggests: python-django-formtools-doc,
+Description: set of high-level abstractions for Django forms - Python 2.7
+ Django's formtools is a set of high-level abstractions for Django forms.
+ Currently for form previews and multi-step forms.
+ .
+ This code used to live in Django proper: in django.contrib.formtools. But it
+ was separated into a standalone package in Django 1.8 to keep the framework's
+ core clean.
+ .
+ This package contains the Python 2.7 module.
+
+Package: python3-django-formtools
+Architecture: all
+Depends: python3-django (>= 1.7),
+         ${misc:Depends},
+         ${python3:Depends},
+Suggests: python-django-formtools-doc,
+Description: set of high-level abstractions for Django forms - Python 3.x
+ Django's formtools is a set of high-level abstractions for Django forms.
+ Currently for form previews and multi-step forms.
+ .
+ This code used to live in Django proper: in django.contrib.formtools. But it
+ was separated into a standalone package in Django 1.8 to keep the framework's
+ core clean.
+ .
+ This package contains the Python 3.x module.
+
+Package: python-django-formtools-doc
+Section: doc
+Architecture: all
+Depends: ${misc:Depends},
+         ${sphinxdoc:Depends},
+Description: set of high-level abstractions for Django forms - doc
+ Django's formtools is a set of high-level abstractions for Django forms.
+ Currently for form previews and multi-step forms.
+ .
+ This code used to live in Django proper: in django.contrib.formtools. But it
+ was separated into a standalone package in Django 1.8 to keep the framework's
+ core clean.
+ .
+ This package contains the documentation.
