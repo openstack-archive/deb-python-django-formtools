@@ -1,3 +1,9 @@
+python-django-formtools (1.0-2) unstable; urgency=medium
+
+  * Fix FTBFS with Python 3 (Closes: #803705).
+
+ -- Thomas Goirand <zigo@debian.org>  Mon, 02 Nov 2015 11:02:11 +0000
+
 python-django-formtools (1.0-1) unstable; urgency=medium
 
   * Initial release. (Closes: #798669)

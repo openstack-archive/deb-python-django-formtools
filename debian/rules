@@ -22,8 +22,15 @@ override_dh_auto_install:
 
 override_dh_auto_test:
 ifeq (,$(findstring nocheck, $(DEB_BUILD_OPTIONS)))
-	set -e ; for pyvers in $(PYTHONS) $(PYTHON3S); do \
-		python$$pyvers setup.py test ; \
+	set -e ; set -x ; for pyvers in $(PYTHONS) $(PYTHON3S); do \
+		PYMAJOR=`echo $$pyvers | cut -d'.' -f1` ; \
+		echo "===> Testing with python$$pyvers (python$$PYMAJOR)" ; \
+		if [ $$PYMAJOR = "2" ] ; then \
+			LIBDIR_END=$$pyvers ; \
+		else \
+			LIBDIR_END=$$PYMAJOR ; \
+		fi ; \
+		PYTHONPATH=. DJANGO_SETTINGS_MODULE=tests.settings PYTHON=python$${pyvers} python$${PYMAJOR}-coverage run /usr/lib/python$$LIBDIR_END/dist-packages/django/bin/django-admin.py test tests ; \
 	done
 endif
 
