@@ -9,6 +9,7 @@ python-django-formtools (1.0+20160714.git54f1ccca01-1) unstable; urgency=medium
     (Closes: #828667).
   * Fixed debian/copyright ordering.
   * Standards-Version: 3.9.8 (no change).
+  * Using pkgos-dh_auto_install from openstack-pkg-tools >= 52~.
 
  -- Thomas Goirand <zigo@debian.org>  Tue, 19 Jul 2016 09:20:46 +0000
 
