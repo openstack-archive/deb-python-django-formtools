@@ -5,7 +5,9 @@ python-django-formtools (1.0+20160714.git54f1ccca01-1) unstable; urgency=medium
   * d/rules: Changed UPSTREAM_GIT protocol to https
 
   [ Thomas Goirand ]
-  * New upstream release based on git 1.0+20160714.git54f1ccca01.
+  * New upstream release based on git 1.0+20160714.git54f1ccca01
+    (Closes: #828667).
+  * Fixed debian/copyright ordering.
 
  -- Thomas Goirand <zigo@debian.org>  Tue, 19 Jul 2016 09:20:46 +0000
 

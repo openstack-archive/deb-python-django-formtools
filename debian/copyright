@@ -2,12 +2,12 @@ Format: http://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
 Upstream-Name: django-formtools
 Source: http://django-formtools.readthedocs.org/en/latest/
 
-Files: debian/*
-Copyright: (c) 2015, Thomas Goirand <zigo@debian.org>
-License: BSD-3-clause
-
 Files: *
 Copyright: (c) 2013-2015, Django Software Foundation <foundation@djangoproject.com>
+License: BSD-3-clause
+
+Files: debian/*
+Copyright: (c) 2015-2016, Thomas Goirand <zigo@debian.org>
 License: BSD-3-clause
 
 License: BSD-3-clause
