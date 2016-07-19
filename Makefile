@@ -20,7 +20,8 @@ docs:
 	$(MAKE) -C docs clean html
 
 test:
-	@flake8 --ignore=W801,E128,E501,W402 formtools
+	@flake8
+	@isort --recursive --check-only --diff formtools tests
 	@ coverage run `which django-admin.py` test tests
 	@coverage report
 

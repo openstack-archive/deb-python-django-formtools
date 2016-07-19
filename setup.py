@@ -1,10 +1,11 @@
+import codecs
 import os
 import re
 import sys
-import codecs
-from fnmatch import fnmatchcase
 from distutils.util import convert_path
-from setuptools import setup, find_packages
+from fnmatch import fnmatchcase
+
+from setuptools import find_packages, setup
 
 
 def read(*parts):
@@ -111,7 +112,7 @@ def find_package_data(where='.', package='',
 setup(
     name="django-formtools",
     version=find_version("formtools", "__init__.py"),
-    url='http://django-formtools.readthedocs.org/en/latest/',
+    url='https://django-formtools.readthedocs.io/en/latest/',
     license='BSD',
     description="A set of high-level abstractions for Django forms",
     long_description=read('README.rst'),
@@ -119,11 +120,14 @@ setup(
     author_email='foundation@djangoproject.com',
     packages=find_packages(exclude=['tests', 'tests.*']),
     package_data=find_package_data(),
-    install_requires=['Django>=1.7'],
+    install_requires=['Django>=1.8'],
     classifiers=[
         'Development Status :: 5 - Production/Stable',
         'Environment :: Web Environment',
         'Framework :: Django',
+        'Framework :: Django :: 1.8',
+        'Framework :: Django :: 1.9',
+        'Framework :: Django :: 1.10',
         'Intended Audience :: Developers',
         'License :: OSI Approved :: BSD License',
         'Operating System :: OS Independent',
@@ -131,9 +135,9 @@ setup(
         'Programming Language :: Python :: 2',
         'Programming Language :: Python :: 2.7',
         'Programming Language :: Python :: 3',
-        'Programming Language :: Python :: 3.2',
         'Programming Language :: Python :: 3.3',
         'Programming Language :: Python :: 3.4',
+        'Programming Language :: Python :: 3.5',
         'Topic :: Internet :: WWW/HTTP',
     ],
     zip_safe=False,
