@@ -16,8 +16,8 @@ Build-Depends-Indep: python-coverage,
                      python3-coverage,
                      python3-django (>= 1.7),
 Standards-Version: 3.9.8
-Vcs-Browser: https://anonscm.debian.org/cgit/openstack/python-django-formtools.git/
-Vcs-Git: https://anonscm.debian.org/git/openstack/python-django-formtools.git
+Vcs-Browser: https://git.openstack.org/cgit/openstack/deb-python-django-formtools?h=debian%2Fnewton
+Vcs-Git: https://git.openstack.org/openstack/deb-python-django-formtools -b debian/newton
 Homepage: http://django-formtools.readthedocs.org/en/latest/
 
 Package: python-django-formtools
